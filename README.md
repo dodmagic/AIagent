@@ -7,6 +7,7 @@
 - `check_egress_ip.py`：查询当前出口 IP
 - `query_tencent_price.py`：查询腾讯控股（`0700.HK`）最新实时或近实时股价
 - `query_local_weather.py`：根据 IP 定位自动查询本地天气
+- `bilibili_homepage.html`：仿哔哩哔哩移动端首页的单文件静态页面示例
 - `requirements.txt`：Python 依赖列表
 
 ## 运行环境
@@ -59,6 +60,14 @@ Wind speed:  12.3 km/h
 Timestamp:   2026-03-28T14:00
 Queried at:  2026-03-28 05:00:00 UTC
 ```
+
+查看哔哩哔哩风格移动首页静态示例：
+
+```bash
+open bilibili_homepage.html
+```
+
+或直接在浏览器中打开仓库根目录下的 `bilibili_homepage.html`。
 
 ## 工作逻辑
 
