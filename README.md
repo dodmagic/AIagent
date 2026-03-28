@@ -6,6 +6,7 @@
 
 - `check_egress_ip.py`：查询当前出口 IP
 - `query_tencent_price.py`：查询腾讯控股（`0700.HK`）最新实时或近实时股价
+- `query_local_weather.py`：根据 IP 定位自动查询本地天气
 - `requirements.txt`：Python 依赖列表
 
 ## 运行环境
@@ -40,6 +41,23 @@ Ticker: 0700.HK
 Price: 500.00
 Currency: HKD
 Timestamp: 2026-03-28 15:30:00+08:00
+```
+
+查询本地天气（基于 IP 自动定位，无需输入城市）：
+
+```bash
+python3 query_local_weather.py
+```
+
+脚本会输出类似以下信息：
+
+```
+Location:    Tokyo, Tokyo, Japan
+Temperature: 18.2 °C
+Condition:   Partly cloudy
+Wind speed:  12.3 km/h
+Timestamp:   2026-03-28T14:00
+Queried at:  2026-03-28 05:00:00 UTC
 ```
 
 ## 工作逻辑
